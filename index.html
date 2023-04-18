@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        @media screen and (orientation:landscape){
+            header{
+               display:flex ;
+               justify-content: center;
+               align-items: center;
+               background-color: rgb(35, 32, 32);
+               color: white;
+               height: 80PX;
+           
+             
+               
+            }
+          
+            
+            .header_div_1{
+                font-size: 20px;
+                padding: 5PX;
+                margin: 10PX;
+                height: 35PX;
+                width: 160PX;
+                border-radius: 40PX;
+                text-align: center;
+                background-color: rgb(225, 80, 80);
+                
+               
+            }
+            .header_div_2{
+                font-size: 20px;
+                margin: 10PX;
+                margin-top: 5px;
+                text-align: center;
+               
+            }
+            .header_p_1{
+               margin-top: -5px;
+                
+            }
+            .header_p_2{
+                margin-top: 15px;
+            }
+            .acme_banner{
+                background-image: url("./mountain_1.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+                height: 530px;
+                border: 2px solid black;
+                
+            }
+            .acme_banner_div{
+                width: 310px;
+                height: 250px;
+                margin-top: 220px;
+             }
+            .Serving{
+                height: 180px;
+                padding: 5px;
+            }
+            .ss{
+                color: white;
+                font-size: 50px;
+                margin-top: 45px;
+                text-align: center;
+                font-weight: bold;
+                text-shadow: 5px 5px 3px rgb(225, 80, 80);
+            }
+            .Shop{
+                height: 68px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              
+            }
+            .bbn{
+                color: black;
+                text-shadow: 5px 5px 3px rgb(225, 80, 80);
+            }
+            .support{
+                display:grid;
+                grid-template-columns: 6fr 6fr;
+                height: 200px;
+                background-color:rgb(225, 80, 80) ;
+             
+            }
+            .p{
+                color: white;
+            }
+            .h1{
+                color: white;
+                font-weight: bold;
+            }
+            .co{
+                color: rgb(225, 80, 80);
+                border: white;
+                font-weight: bold;
+                text-shadow: 6px 6px 7px rgb(141, 85, 85);
+            }
+           .support_div_1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+           }
+           .support_div_1_1{
+            width:300px;
+           }
+           .support_div_2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            background-color: white;
+            
+           }
+          
+          .support_div_2_1{
+            width:350px;
+            padding: 10px;
+            text-align: justify;
+            background-color: white;
+        
+         }
+       
+         .shop{
+           display: flex;
+           justify-content: space-around;
+           height: 500px;
+           width: 100%;
+         
+         
+        }
+        .shop_1{
+          
+            height: 490px;
+            width: 240px;
+            display:flex;
+            flex-direction: column;
+            border: 1px solid black;
+            
+           
+            
+         }
+         .shop_1_1{
+           
+            border: 1px solid black;
+            height: 210px;
+            width: 210px;
+            margin: 10px;
+            box-shadow: 8px 5px 8px rgb(244, 142, 142);
+           
+           
+         }
+         .shop_1_2{
+            padding: 10px;
+            height: 180px;
+            width: 210px;
+            margin: 10px;
+            text-align: justify;
+            border: 1px solid black;
+        }
+         .shop_2{
+          
+            height: 490px;
+            width: 240px;
+            display:flex;
+            flex-direction: column;
+            border: 1px solid black;
+         }
+         .shop_2_1{
+            border: 1px solid black;
+            height: 210px;
+            width: 210px;
+            margin: 10px;
+            box-shadow: 8px 5px 8px rgb(244, 142, 142);
+        
+         }
+         .shop_2_2{
+         
+            padding: 10px;
+            height: 180px;
+            width: 210px;
+            margin: 10px;
+            text-align: justify;
+            border: 1px solid black;
+         }
+         .shop_3{
+          
+            height: 490px;
+            width: 240px;
+            display:flex;
+            flex-direction: column;
+            border: 1px solid black;
+         }
+         .shop_3_1{
+            border: 1px solid black;
+            height: 210px;
+            width: 210px;
+            margin: 10px;
+            box-shadow: 8px 5px 8px rgb(244, 142, 142);
+         }
+         .shop_3_2{
+           
+            padding: 10px;
+            height: 180px;
+            width: 210px;
+            margin: 10px;
+            text-align: justify;
+            border: 1px solid black;
+         }
+         .sunset{
+            background-image: url("./acme_3.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+                height: 530px;
+                border: 2px solid black;
+                margin-bottom: 30px;
+         }
+         #nav{
+            margin-left: 450px;
+         }
+         #ACME{
+            margin-left: 30px;
+         }
+         .local{
+            border: 3px dotted red;
+            height: 410px;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(225, 80, 80);
+        
+           
+           
+         }
+         .wrap{
+          
+            height: 400px;
+            width: 800px;
+           background-color: rgb(225, 80, 80);
+            background-image: url("./local.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+         }
+         .para{
+            background-color: rgb(225, 80, 80);
+            border: 5px solid rgb(240, 139, 139);
+            height: 370px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+         }
+         .para_sub{
+            width:790px ;
+            height:320px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            background-color:rgb(240, 139, 139) ;
+         }
+         .para_1{
+            background-color: white;
+            border: 20px solid rgb(56, 53, 53);
+            height: 280px;
+            width: 740px;
+            padding: 10px;
+            border-image: url("./border_image_3.jpg") stretch 40;
+          
+            
+         }
+         .shop_load{
+            color: black;
+            font-weight: bold;
+            text-align: center;
+         }
+         .pppp{
+            color: rgb(227, 11, 11);
+            text-align: justify;
+         }
+
+        }
+    
+        @media screen and (orientation:portrait){
+            header{
+                background-color: rgb(35, 32, 32);
+                color: white;
+                height: 95px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+               
+
+            }
+            .header_div_1{
+                font-size: 20px;
+                padding: 5PX;
+                margin: 10PX;
+                height: 35PX;
+                width: 160PX;
+                border-radius: 40PX;
+                text-align: center;
+                background-color: rgb(225, 80, 80);
+               
+            }
+            .header_p_1{
+               margin-top: 4px;
+               color: blue;
+            }
+            .header_div_2{
+                font-size: 15px;
+               
+            }
+            .acme_banner{
+                background-image: url("./hiking.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+                height: 345px;
+                display: flex;
+                background-color: blue;
+              
+                
+            }
+            .acme_banner_div{
+                width: 190px;
+                height: 140px;
+                margin-top: 170px;
+             }
+            .Serving{
+                height: 100px;
+            }
+            .ss{
+                font-weight: bold;
+                margin-left: 9px;
+                font-size: 31px;
+                color: white;
+                text-shadow: 5px 5px 3px rgb(225, 80, 80);
+            }
+            .Shop{
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            }
+            .support{
+                height: 400px;
+                width: 100%;
+                background-color: rgb(225, 80, 80);
+            }
+            .support_div_1{
+               
+                width: 100%;
+                height: 150px;
+                background-color: rgb(246, 209, 209);
+              
+            }
+            .support_div_1_1{
+              
+                width: 70%;
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .p{
+              margin-left: 20px;
+              margin-top: 20px;
+               
+            }
+            .h1{
+              margin-left: 20px;
+              margin-top: 10;
+            }
+            .support_div_2{
+                width: 100%;
+                height: 160px;
+                margin-top: 30px;
+                background-color: white;
+            }
+            .support_div_2_1{
+                width: 100%;
+                height: 155px;
+                display: flex;
+            
+             
+            }
+            .co{
+               margin-left: 20px;
+               margin-right: 20px;
+               margin-top: 20px;
+               text-align: justify;
+               color: black;
+            }
+            .shop{
+               
+                height: 1650px;
+                border: 8px double  rgb(225, 80, 80);
+            }
+            .shop_1{
+                margin-top: 60px;
+                margin-bottom: 80px;
+                background-color: rgb(246, 209, 209);
+            }
+          
+            .shop_1_2{
+                padding: 3px;
+                text-align: justify;
+            }
+            .shop_2{
+                margin-bottom: 80px;
+                background-color: rgb(246, 209, 209);
+            }
+          
+            .shop_2_2{
+                padding: 3px;
+                text-align: justify;
+
+            }
+            .shop_3{
+               
+                margin-bottom: 50px;
+                background-color: rgb(246, 209, 209);
+            }
+           
+            .shop_3_2{
+                padding: 3px;
+                text-align: justify;
+            }
+            .local{
+            border: 5px dotted white;
+            height: 500px;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(225, 80, 80);
+           
+           
+         }
+         .wrap{
+          
+            height: 450px;
+            width: 1000px;
+            background-color: blueviolet;
+            background-image: url("./local.png");
+            background-size: cover;
+         }
+         .para{
+            border: 5px double red;
+            background-color: rgb(255, 195, 195);
+            height: 410px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;;
+            
+         }
+        
+         .para_1{
+            height: 370px;
+            color: red;
+            background-color: white;
+            text-align: justify;
+            padding: 10px;
+         }
+         .shop_load{
+            text-align: center;
+         }
+          
+        }
+      
+    </style>
+</head>
+<body>
+   <header>
+          <div class="header_div_1">
+                <p class="header_p_1">Announcement</p>
+          </div>
+          <div class="header_div_2">
+                <p class="header_p_2">How we're responding to COVID-19</p>
+          </div>
+   </header>
+   <div class="navbar navbar-expand-lg navbar-dark bg-danger" id="brand">
+        <h1 id="ACME" class="navbar-brand">ACME</h1>      
+        <button class="navbar-toggler" data-bs-target="#ACME" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"  id="ACME">
+            <ol class="navbar-nav" id="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">help</a>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-warning">
+                            <span class="bi bi-search"></span>
+                        </button>
+                       </div>
+                </li>
+            </ol>
+        </div>
+   </div>
+   <div class="acme_banner">
+        <div class="acme_banner_div">
+                <div class="Serving">
+                    <h1 class="ss">Serving you
+                        since 1989.</h1>
+                </div>
+                <div class="Shop">
+                    <button  class="btn btn-outline-light"><span id="bbn">Shop Merech</span></button>
+                </div>
+        </div>
+   </div>
+
+
+ <div class="support">
+        <div class="support_div_1">
+           <div  class="support_div_1_1">
+                <p class="p">WAYS TO SUPPORT</p>
+                <h3 class="h1">Support Acme Outdoors.</h3>
+           </div>
+        </div>
+        <div class="support_div_2">
+            <div class="support_div_2_1">
+                <p class="co">COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more than ever. Below, we’ve listed the best ways to help us through this season.</p>
+            </div>
+         </div>
+</div>
+<div class="shop">
+    <div class="shop_1">
+        <div class="shop_1_1">
+            <img  id="1png"  src="./1.png"  width="100%">
+        </div>
+        <div class="shop_1_2">
+            <p>Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!</p>
+        </div>
+    </div>
+
+    <div class="shop_2">
+        <div class="shop_2_1">
+            <img id="2png"  src="./2.png" width="100%">
+        </div>
+        <div class="shop_2_2">
+            <p>Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.</p>
+        </div>
+    </div>
+
+    <div class="shop_3">
+        <div class="shop_3_1">
+            <img id="3png"  src="./3.png" width="100%">
+        </div>
+        <div class="shop_3_2">
+            <p>Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.</p>
+       </div>
+    </div>
+
+</div>
+<div class="sunset">
+
+</div>
+<!--wrap design-->
+<div class="local">
+    <div class="wrap">
+
+    </div>
+</div>
+<hr>
+<div class="para">
+    <div class="para_sub">
+      <div class="para_1">
+        <h1 class="shop_load">Shop Local</h1>
+        <p class="pppp">We know that during COVID-19, a lot of folks around the city and state are feeling uneasy about the future - we’re not sure what the future holds either.
+
+            That said: we know that we love making sure you have the gear you need for your adventures, and we’re going to keep doing that - with our team - until the city tells us we can’t.
+            
+            But as long as folks like yourself support small businesses around the city, then we’ll be here — every day, making sure your orders arrive on time.
+        </p>
+      </div>
+    </div>
+</div>
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   <script src="../node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
